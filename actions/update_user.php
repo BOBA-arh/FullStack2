@@ -1,7 +1,7 @@
 <?php
 session_start();
-$user = 'root';
-$pdo = new PDO('mysql:dbname=New_new;host=127.0.0.1;port=3306', $user, '');
+$user = $password = 'root';
+$pdo = new Pdo('mysql:dbname=fullstack2;host=127.0.0.1;port=3307', $user, $password);
 
 $userId = $_POST['id'];
 $name = $_POST['name'];
